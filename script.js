@@ -1,17 +1,17 @@
 $(document).ready(function(){
-  $('#addtocart').on('click',function(){
+  $('#addtobag').on('click',function(){
     
     var button = $(this);
-    var cart = $('#cart');
-    var cartTotal = cart.attr('data-totalitems');
-    var newCartTotal = parseInt(cartTotal) + 1;
+    var bag = $('#bag');
+    var bagTotal = bag.attr('data-totalitems');
+    var newBagTotal = parseInt(bagTotal) + 1;
     
-    button.addClass('sendtocart');
+    button.addClass('sendtobag');
     setTimeout(function(){
-      button.removeClass('sendtocart');
-      cart.addClass('shake').attr('data-totalitems', newCartTotal);
+      button.removeClass('sendtobag');
+      bag.addClass('shake').attr('data-totalitems', newBagTotal);
       setTimeout(function(){
-        cart.removeClass('shake');
+        bag.removeClass('shake');
       },500)
     },1000)
   })

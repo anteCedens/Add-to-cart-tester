@@ -22,14 +22,14 @@ html, body {
   color: #292d48;
   font-size: 18px;
 }
-.page-wrapper button .cart-item {
+.page-wrapper button .bag-item {
   position: absolute;
   height: 24px;
   width: 24px;
   top: -10px;
   right: -10px;
 }
-.page-wrapper button .cart-item:before {
+.page-wrapper button .bag-item:before {
   content: '+';
   display: block;
   line-height: 24px;
@@ -42,14 +42,14 @@ html, body {
   border-radius: 20px;
   text-align: center;
 }
-.page-wrapper button.sendtocart .cart-item {
+.page-wrapper button.sendtobag .bag-item {
   display: block;
   animation: xAxis 1s forwards cubic-bezier(1, 0.44, 0.84, 0.165);
 }
-.page-wrapper button.sendtocart .cart-item:before {
+.page-wrapper button.sendtobag .bag-item:before {
   animation: yAxis 1s alternate forwards cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.cart {
+.bag {
   position: fixed;
   top: 20px;
   right: 20px;
@@ -61,11 +61,11 @@ html, body {
   justify-content: center;
   border-radius: 5px;
 }
-.cart i {
+.bag i {
   font-size: 25px;
   color: white;
 }
-.cart:before {
+.bag:before {
   font-family: "Font Awesome 5 Free";
   content: "\f581";
   font-size: 12px;
@@ -82,8 +82,8 @@ html, body {
   text-align: center;
   border-radius: 24px;
 }
-.cart.shake {
-  animation: shakeCart 0.4s ease-in-out forwards;
+.bag.shake {
+  animation: shakeBag 0.4s ease-in-out forwards;
 }
 @keyframes xAxis {
   100% {
@@ -95,7 +95,7 @@ html, body {
     transform: translateY(calc(-50vh + 75px));
   }
 }
-@keyframes shakeCart {
+@keyframes shakeBag {
   25% {
     transform: translateX(6px);
   }
