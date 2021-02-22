@@ -66,7 +66,8 @@ html, body {
   color: white;
 }
 .cart:before {
-  content: attr(data-totalitems);
+  font-family: "Font Awesome 5 Free";
+  content: "\f581";
   font-size: 12px;
   font-weight: 600;
   position: absolute;
