@@ -16,7 +16,8 @@ html, body {
   padding: 20px;
   border: none;
   background: #d5d8e7;
-  position: relative;
+  position: absolute;
+  top: 400px;
   outline: none;
   border-radius: 5px;
   color: #292d48;
@@ -92,7 +93,7 @@ html, body {
 }
 @keyframes yAxis {
   100% {
-    transform: translateY(calc(-50vh + 75px));
+    transform: translateY(calc(-50vh - 40px));
   }
 }
 @keyframes shakeBag {
