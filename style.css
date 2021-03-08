@@ -45,10 +45,10 @@ html, body {
 }
 .page-wrapper button.sendtobag .bag-item {
   display: block;
-  animation: xAxis 1s forwards cubic-bezier(1, 0.44, 0.84, 0.165);
+  animation: xAxis 1s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .page-wrapper button.sendtobag .bag-item:before {
-  animation: yAxis 1s alternate forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: yAxis 1s alternate forwards cubic-bezier(1, 0.44, 0.84, 0.165);
 }
 .bag {
   position: fixed;
@@ -93,7 +93,7 @@ html, body {
 }
 @keyframes yAxis {
   100% {
-    transform: translateY(calc(-50vh - 40px));
+    transform: translateY(calc(-50vh - 50px));
   }
 }
 @keyframes shakeBag {
